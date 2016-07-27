@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/show_now_info_rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- <TextView
+        android:id="@+id/now_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="NA"
+        android:textSize="60sp" /> -->
+    <ImageView android:id="@+id/now_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/na"/>
+
+    <TextView
+        android:id="@+id/now_desp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/now_temp"
+        android:layout_centerHorizontal="true"
+        android:text="NA"
+        android:textSize="25sp" />
+    <ImageView
+        android:id="@+id/line0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/now_desp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/basic_line" />
+    <TextView
+        android:id="@+id/now_fl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true" 
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/line0"
+        android:text="体感"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/now_fl_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" 
+        android:layout_below="@id/line0"
+        android:text="-"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/now_fl"
+        android:background="@drawable/basic_line" />
+
+    <TextView
+        android:id="@+id/now_hum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1"
+        android:layout_alignParentStart="true" 
+        android:layout_alignParentLeft="true"
+        android:text="相对湿度"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/now_hum_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" 
+        android:layout_below="@id/line1"
+        android:text="-"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/now_hum"
+        android:background="@drawable/basic_line" />
+
+    <TextView
+        android:id="@+id/now_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line2"
+        android:layout_alignParentStart="true" 
+        android:layout_alignParentLeft="true"
+        android:text="风"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/now_wind_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" 
+        android:layout_below="@id/line2"
+        android:text="-"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/now_wind"
+        android:background="@drawable/basic_line" />
+
+    <TextView
+        android:id="@+id/now_pres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line3"
+        android:layout_alignParentStart="true" 
+        android:layout_alignParentLeft="true"
+        android:text="气压"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/now_pres_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" 
+        android:layout_below="@id/line3"
+        android:text="-"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/now_pres"
+        android:background="@drawable/basic_line" />
+
+    <TextView
+        android:id="@+id/now_vis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line4"
+        android:layout_alignParentStart="true" 
+        android:layout_alignParentLeft="true"
+        android:text="能见度"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/now_vis_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" 
+        android:layout_below="@id/line4"
+        android:text="-"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/now_vis"
+        android:background="@drawable/basic_line" />
+
+    <TextView
+        android:id="@+id/now_pcpn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line5"
+        android:layout_alignParentStart="true" 
+        android:layout_alignParentLeft="true"
+        android:text="降水量"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/now_pcpn_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" 
+        android:layout_below="@id/line5"
+        android:text="-"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/now_pcpn"
+        android:background="@drawable/basic_line" />
+
+    
+
+</RelativeLayout>

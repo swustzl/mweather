@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/body"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/aqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:text=" 52 良"
+        android:drawableLeft="@drawable/aqi_icon_yellow_nut"
+        android:background="@drawable/aqi_button_style" 
+        android:visibility="gone"/>
+    <LinearLayout android:id="@+id/alarm_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:orientation="vertical"></LinearLayout>
+    
+    <ImageView
+        android:id="@+id/h_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/h_line" />
+
+    <TextView
+        android:id="@+id/today_desp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/h_bottom_line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="天气"
+        android:textSize="20sp" 
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/today_desp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="今天" 
+        android:textColor="@android:color/white"/>
+    <ImageView
+        android:id="@+id/h_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/today"
+        android:background="@drawable/h_line" />
+
+    <ImageView
+        android:id="@+id/v_center_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/h_bottom_line"
+        android:layout_alignTop="@id/h_top_line"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/v_line" />
+
+    <TextView
+        android:id="@+id/today_aqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/today"
+        android:layout_alignTop="@id/h_top_line"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="5dp"
+        android:text="良" 
+        android:textColor="@android:color/white"
+        android:textSize="10dp"
+        android:background="@drawable/aqi_main_good"
+        android:gravity="center"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/today_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/h_top_line"
+        android:layout_toLeftOf="@id/v_center_line"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="10/12℃" 
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tomorrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/h_top_line"
+        android:layout_toRightOf="@id/v_center_line"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="明天" 
+        android:textColor="@android:color/white"/>
+    <TextView
+        android:id="@+id/tomorrow_aqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tomorrow"
+        android:layout_alignTop="@id/h_top_line"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="5dp"
+        android:text="良" 
+        android:textSize="10dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/aqi_main_good"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tomorrow_desp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/h_bottom_line"
+        android:layout_toRightOf="@id/v_center_line"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="天气"
+        android:textSize="20sp" 
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tomorrow_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/h_top_line"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:text="10/12℃"
+        android:textColor="@android:color/white" />
+    
+    <ImageView android:id="@+id/wind_deg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/h_top_line"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/main_icon_wind_rotate"/>
+    <TextView
+        android:id="@+id/wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/h_top_line"
+        android:layout_toRightOf="@id/wind_deg"
+        android:layout_toEndOf="@id/wind_deg"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:text="东北风 2级"
+        android:textColor="@android:color/white" />
+    
+    <Button
+        android:id="@+id/temp"
+        android:layout_width="110dp"
+        android:layout_height="70dp"
+        android:layout_above="@id/wind"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/temp_button_style"
+        />
+    
+     <TextView
+        android:id="@+id/desp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/temp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="小雨"
+        android:textSize="25sp" 
+        android:textColor="@android:color/white"/>
+     
+     <Button 
+        android:id="@+id/today_weather_info_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/h_top_line"
+        android:layout_alignBottom="@id/h_bottom_line"
+        android:layout_alignRight="@id/v_center_line"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/day_weather_style"/>
+     
+      <Button 
+        android:id="@+id/tomrrow_weather_info_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/h_top_line"
+        android:layout_alignBottom="@id/h_bottom_line"
+        android:layout_alignLeft="@id/v_center_line"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/day_weather_style"/>
+      
+      <Button 
+        android:id="@+id/people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/h_top_line"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/people"/>
+      
+      <TextView android:id="@+id/people_yuyan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/people"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="0dp"
+        android:text="(●'◡'●)\n欢迎使用本天气预报软件！"
+        android:background="@drawable/feed_to_bg"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    
+    <ImageView android:id="@+id/basic_city_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/title_location"
+        android:visibility="gone" />
+    <TextView android:id="@+id/basic_city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/basic_city_location"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"/>
+    <TextView android:id="@+id/basic_city_update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"
+        android:textColor="#7f000000"/>
+
+    <Button android:id="@+id/basic_city_delete"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:background="@drawable/ic_delete"/>
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000" >
+ 
+    <TextView android:id="@+id/zhishu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1f000000"
+        android:text="指数"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:gravity="left" />
+    <com.swust.weather.customview.RecommendItemView
+        xmlns:item="http://schemas.android.com/apk/res/com.swust.weather"
+        android:id="@+id/item_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/zhishu"
+        android:layout_marginTop="1dp"
+        item:type_text="舒适度"/>
+    <com.swust.weather.customview.RecommendItemView
+        xmlns:item="http://schemas.android.com/apk/res/com.swust.weather"
+        android:id="@+id/item_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/zhishu"
+        android:layout_marginTop="1dp"
+        item:type_text="感冒"/>
+    <com.swust.weather.customview.RecommendItemView
+        xmlns:item="http://schemas.android.com/apk/res/com.swust.weather"
+        android:id="@+id/item_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/item_1"
+        android:layout_marginTop="1dp"
+        item:type_text="穿衣"/>
+    <com.swust.weather.customview.RecommendItemView
+        xmlns:item="http://schemas.android.com/apk/res/com.swust.weather"
+        android:id="@+id/item_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item_2"
+        android:layout_marginTop="1dp"
+        item:type_text="运动"/>
+   <com.swust.weather.customview.RecommendItemView
+        xmlns:item="http://schemas.android.com/apk/res/com.swust.weather"
+        android:id="@+id/item_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/item_3"
+        android:layout_marginTop="1dp"
+        item:type_text="洗车"/>
+    <com.swust.weather.customview.RecommendItemView
+        xmlns:item="http://schemas.android.com/apk/res/com.swust.weather"
+        android:id="@+id/item_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/item_4"
+        android:layout_marginTop="1dp"
+        item:type_text="旅游"/>
+   <com.swust.weather.customview.RecommendItemView
+        xmlns:item="http://schemas.android.com/apk/res/com.swust.weather"
+        android:id="@+id/item_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/item_5"
+        android:layout_marginTop="1dp"
+        item:type_text="紫外线"/>
+
+</RelativeLayout>
